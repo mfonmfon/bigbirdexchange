@@ -50,38 +50,6 @@ export function Hero() {
             </Button>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 max-w-4xl mx-auto">
-            <div className="flex flex-col items-center gap-4">
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
-                <Zap className="w-7 h-7 text-primary" />
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-foreground">{"<5 mins"}</div>
-                <div className="text-sm text-muted-foreground mt-1">Average Transaction Time</div>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center gap-4">
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
-                <Shield className="w-7 h-7 text-primary" />
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-foreground">100%</div>
-                <div className="text-sm text-muted-foreground mt-1">Secure Transactions</div>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center gap-4">
-              <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
-                <TrendingUp className="w-7 h-7 text-primary" />
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-foreground">Best</div>
-                <div className="text-sm text-muted-foreground mt-1">Market Rates</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

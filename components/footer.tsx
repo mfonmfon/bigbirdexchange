@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { MessageCircle, Mail, MapPin } from "lucide-react"
-
+import Image from "next/image"
+import BigbirdExchange from "@/public/bigbird-logo.png"
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -11,12 +12,16 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary-foreground">BB</span>
-              </div>
-              <span className="text-xl font-bold">
-                BigBird<span className="text-primary">Exchange</span>
-              </span>
+               {/* Logo */}
+              <Link href="/" className="flex items-center gap-3">
+                <Image
+                  src={BigbirdExchange} 
+                  alt="BigBird Xchange"
+                  width={70}
+                  height={40}
+                  className="rounded-md"
+                />
+                </Link>
             </div>
             <p className="text-secondary-foreground/80 text-sm leading-relaxed">
               Your trusted platform for fast and secure crypto and giftcard trading.
@@ -68,8 +73,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="text-secondary-foreground/80 text-sm">Cryptocurrency Trading</li>
               <li className="text-secondary-foreground/80 text-sm">Giftcard Exchange</li>
-              <li className="text-secondary-foreground/80 text-sm">Perfect Money</li>
-              <li className="text-secondary-foreground/80 text-sm">Bank Transfers</li>
+              <li className="text-secondary-foreground/80 text-sm">Trade funds</li>
             </ul>
           </div>
 
@@ -79,11 +83,11 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-secondary-foreground/80 text-sm">
                 <MessageCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span>WhatsApp: +234 801 234 5678</span>
+                <span>WhatsApp: +2348123366932</span>
               </li>
               <li className="flex items-start gap-2 text-secondary-foreground/80 text-sm">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span>support@bigbirdexchange.com</span>
+                <span>thebigbirdexchange@gmail.com</span>
               </li>
               <li className="flex items-start gap-2 text-secondary-foreground/80 text-sm">
                 <MapPin className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />

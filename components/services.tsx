@@ -20,7 +20,7 @@ const services = [
   {
     icon: DollarSign,
     title: "Trade Funds",
-    description: "Easily buy, sell, and exchange digital currencies with trusted rates and fast transactions.",
+    description: "Trade funds easily at unbeatable rate and get paid in minutes after confirmation.",
     features: ["Instant Exchange", "Best Rates", "Trusted & Secure"],
     whatsappMessage: "Hi, I'm interested in trading digital currencies with BigBird Exchange.",
 
