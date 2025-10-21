@@ -2,6 +2,9 @@ import Link from "next/link"
 import { MessageCircle, Mail, MapPin } from "lucide-react"
 import Image from "next/image"
 import BigbirdExchange from "@/public/bigbird-logo.png"
+import AppStoreBadge from "@/public/app-store.png"
+import PlayStoreBadge from "@/public/play-store.png"
+
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
@@ -12,20 +15,43 @@ export function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-               {/* Logo */}
               <Link href="/" className="flex items-center gap-3">
                 <Image
-                  src={BigbirdExchange} 
+                  src={BigbirdExchange}
                   alt="BigBird Xchange"
                   width={70}
                   height={40}
                   className="rounded-md"
                 />
-                </Link>
+                <span className="font-semibold text-lg">BigBird Exchange</span>
+              </Link>
             </div>
-            <p className="text-secondary-foreground/80 text-sm leading-relaxed">
+            <p className="text-secondary-foreground/80 text-sm leading-relaxed mb-6">
               Your trusted platform for fast and secure crypto and giftcard trading.
             </p>
+
+            {/* Coming Soon Store Badges */}
+            <div className="mt-4">
+              <p className="text-xs font-medium text-secondary-foreground/60 mb-2">
+                📱 Mobile App Coming Soon
+              </p>
+              <div className="flex items-center gap-3">
+                <Image
+                  src={AppStoreBadge}
+                  alt="Download on the App Store"
+                  width={120}
+                  height={40}
+                  className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition duration-300 cursor-pointer"
+                />
+                <Image
+                  src={PlayStoreBadge}
+                  alt="Get it on Google Play"
+                  width={120}
+                  height={40}
+                  className="opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition duration-300 cursor-pointer"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Quick Links */}
@@ -33,34 +59,22 @@ export function Footer() {
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link
-                  href="#services"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm"
-                >
+                <Link href="#services" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm">
                   Services
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#features"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm"
-                >
+                <Link href="#features" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm">
                   Features
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#how-it-works"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm"
-                >
+                <Link href="#how-it-works" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm">
                   How It Works
                 </Link>
               </li>
               <li>
-                <Link
-                  href="#testimonials"
-                  className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm"
-                >
+                <Link href="#testimonials" className="text-secondary-foreground/80 hover:text-primary transition-colors text-sm">
                   Testimonials
                 </Link>
               </li>
@@ -73,7 +87,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="text-secondary-foreground/80 text-sm">Cryptocurrency Trading</li>
               <li className="text-secondary-foreground/80 text-sm">Giftcard Exchange</li>
-              <li className="text-secondary-foreground/80 text-sm">Trade funds</li>
+              <li className="text-secondary-foreground/80 text-sm">Trade Funds</li>
             </ul>
           </div>
 
