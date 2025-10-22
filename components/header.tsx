@@ -15,7 +15,7 @@ export function Header() {
   const [visible, setVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  const whatsappNumber = "+234915446519";
+  const whatsappNumber = "+2349154465198";
   const whatsappMessage = encodeURIComponent(
     "Hi, I want to make an exchange on BigBird Xchange"
   );

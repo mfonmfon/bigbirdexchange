@@ -6,7 +6,7 @@ import Image from "next/image"
 import BgPattern from "@/public/backgroundImage.jpg" // your background image
 
 export function Hero() {
-  const whatsappNumber = "+234915446519"
+  const whatsappNumber = "+2349154465198"
   const whatsappMessage = encodeURIComponent("Hi, I want to make an exchange on BigBird Exchange")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
