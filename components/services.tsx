@@ -8,7 +8,7 @@ const services = [
     title: "Cryptocurrency Trading",
     description: "Buy and sell Bitcoin, Ethereum, USDT, and other popular cryptocurrencies at competitive rates.",
     features: ["BTC, ETH, USDT", "Instant Settlement", "Best Market Rates"],
-    whatsappMessage: "Hi, I'm interested in trading cryptocurrency with BigBird Exchange",
+    whatsappMessage: "Hi, I want to exchange crypto with BigBird Exchange",
   },
   {
     icon: Gift,
@@ -22,8 +22,7 @@ const services = [
     title: "Trade Funds",
     description: "Trade funds easily at unbeatable rate and get paid in minutes after confirmation.",
     features: ["Instant Exchange", "Best Rates", "Trusted & Secure"],
-    whatsappMessage: "Hi, I'm interested in trading digital currencies with BigBird Exchange.",
-
+    whatsappMessage: "Hi, I want to trade funds with BigBird Exchange.",
   },
 ]
 
