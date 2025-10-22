@@ -29,7 +29,7 @@ const services = [
 
 export function Services() {
   const handleServiceClick = (message: string) => {
-    const phoneNumber = "+2348123366932" // Replace with your actual WhatsApp number
+    const phoneNumber = "+234915446519" // Replace with your actual WhatsApp number
     const encodedMessage = encodeURIComponent(message)
     window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, "_blank")
   }

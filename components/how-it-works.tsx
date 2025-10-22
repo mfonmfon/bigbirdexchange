@@ -21,7 +21,7 @@ const steps = [
 ]
 
 export function HowItWorks() {
-  const whatsappNumber = "+2348123366932" // Replace with actual WhatsApp number
+  const whatsappNumber = "+234915446519" // Replace with actual WhatsApp number
   const whatsappMessage = encodeURIComponent("Hi, I want to make an exchange on BigBird Exchange")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 

@@ -62,16 +62,28 @@ export function Testimonials() {
         </div>
       </div>
 
+      {/* First Row - scroll left */}
       <div className="relative mb-8">
-        <div className="flex gap-6 animate-scroll-left">
+        <div
+          className="flex gap-6 animate-[scroll-left_45s_linear_infinite]"
+          style={{
+            "--scroll-distance": "50%",
+            "@keyframes scroll-left": "{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}",
+          } as React.CSSProperties}
+        >
           {[...testimonials, ...testimonials, ...testimonials].map((testimonial, index) => (
-            <Card key={`left-${index}`} className="flex-shrink-0 w-[380px] p-8 border-border bg-card">
+            <Card
+              key={`left-${index}`}
+              className="flex-shrink-0 w-[380px] p-8 border-border bg-card/80 backdrop-blur-sm"
+            >
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                 ))}
               </div>
-              <p className="text-muted-foreground mb-8 leading-relaxed text-base">"{testimonial.content}"</p>
+              <p className="text-muted-foreground mb-8 leading-relaxed text-base">
+                "{testimonial.content}"
+              </p>
               <div>
                 <div className="font-bold text-foreground text-lg">{testimonial.name}</div>
                 <div className="text-sm text-muted-foreground mt-1">{testimonial.role}</div>
@@ -81,16 +93,28 @@ export function Testimonials() {
         </div>
       </div>
 
+      {/* Second Row - scroll right */}
       <div className="relative">
-        <div className="flex gap-6 animate-scroll-right">
+        <div
+          className="flex gap-6 animate-[scroll-right_50s_linear_infinite]"
+          style={{
+            "--scroll-distance": "50%",
+            "@keyframes scroll-right": "{0%{transform:translateX(0)}100%{transform:translateX(50%)}}",
+          } as React.CSSProperties}
+        >
           {[...testimonials, ...testimonials, ...testimonials].map((testimonial, index) => (
-            <Card key={`right-${index}`} className="flex-shrink-0 w-[380px] p-8 border-border bg-card">
+            <Card
+              key={`right-${index}`}
+              className="flex-shrink-0 w-[380px] p-8 border-border bg-card/80 backdrop-blur-sm"
+            >
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                 ))}
               </div>
-              <p className="text-muted-foreground mb-8 leading-relaxed text-base">"{testimonial.content}"</p>
+              <p className="text-muted-foreground mb-8 leading-relaxed text-base">
+                "{testimonial.content}"
+              </p>
               <div>
                 <div className="font-bold text-foreground text-lg">{testimonial.name}</div>
                 <div className="text-sm text-muted-foreground mt-1">{testimonial.role}</div>
