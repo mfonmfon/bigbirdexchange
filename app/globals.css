@@ -119,29 +119,40 @@
   }
 }
 
-/* Adding infinite scroll animations for testimonials */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Custom Animations */
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-33.333%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes scroll-right {
   0% {
-    transform: translateX(-33.333%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(50%);
   }
 }
 
 .animate-scroll-left {
-  animation: scroll-left 40s linear infinite;
+  animation: scroll-left 25s linear infinite;
+  will-change: transform;
 }
 
 .animate-scroll-right {
-  animation: scroll-right 40s linear infinite;
+  animation: scroll-right 25s linear infinite;
+  will-change: transform;
+}
+
+.animate-scroll-left:hover,
+.animate-scroll-right:hover {
+  animation-play-state: paused;
 }
