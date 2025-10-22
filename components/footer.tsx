@@ -97,7 +97,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-secondary-foreground/80 text-sm">
                 <MessageCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <span>WhatsApp: +2348123366932</span>
+                <span>WhatsApp: +2349154465198</span>
               </li>
               <li className="flex items-start gap-2 text-secondary-foreground/80 text-sm">
                 <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
