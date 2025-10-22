@@ -7,7 +7,7 @@ import BgPattern from "@/public/backgroundImage.jpg"
 
 export function Hero() {
   const whatsappNumber = "2349154465198"
-  const whatsappMessage = encodeURIComponent("Hi, I want to make an exchange on BigBird Exchange")
+  const whatsappMessage = encodeURIComponent("Hi, I want to trade with BigBird Exchange")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
   const handleTradeNowClick = () => {

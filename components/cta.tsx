@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 
 export function CTA() {
   const whatsappNumber = "+2349154465198" // Replace with actual WhatsApp number
-  const whatsappMessage = encodeURIComponent("Hi, I want to make an exchange on BigBird Exchange")
+  const whatsappMessage = encodeURIComponent("")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
   return (

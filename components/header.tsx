@@ -17,7 +17,7 @@ export function Header() {
 
   const whatsappNumber = "+2349154465198";
   const whatsappMessage = encodeURIComponent(
-    "Hi, I want to make an exchange on BigBird Xchange"
+    "Hi, I want to trade with BigBird Xchange"
   );
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
